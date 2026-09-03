@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>PDM</title>
+    <title>PDM | Pambayang Dalubhasaan ng Marilao</title>
     <link rel="shortcut icon" href="../Pictures/pdm.png" type="image/x-icon" />
     <link rel="stylesheet" href="../src/output.css" />
+    <meta
+      name="description"
+      content="Pambayang Dalubhasaan ng Marilao (PDM). Empowering students through quality education and opportunities in Marilao, Bulacan."
+    />
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=DynaPuff:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
@@ -49,7 +53,9 @@
           >
             Login
           </a>
-          <img src="../svg/hamburger.svg" class="w-10 hidden max-md:block" />
+          <button type="button" class="burgerbtn">
+            <img src="../svg/hamburger.svg" class="w-10 hidden max-md:block" />
+          </button>
         </div>
       </div>
 
@@ -82,7 +88,7 @@
         class="flex items-center max-lg:flex-col px-12 max-lg:px-0 py-8 max-lg:justify-start max-lg:gap-5 m"
       >
         <div class="flex items-center w-[30%] max-lg:w-full px-8">
-          <img src="../Pictures/pdm.png" class="w-20 object-contain" />
+          <img src="./Pictures/pdm.png" class="w-20 object-contain" />
 
           <div class="ml-4">
             <p class="text-sm tracking-wide">
@@ -102,19 +108,19 @@
             class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-5"
           >
             <div class="flex items-center gap-2 text-sm">
-              <img src="../svg/location.svg" class="w-6" />
+              <img src="./svg/location.svg" class="w-6" />
               <p class="tracking-wide text-base">
                 Abangan Norte, Marilao, Bulacan
               </p>
             </div>
 
             <div class="flex items-center gap-2 text-sm">
-              <img src="../svg/call.svg" class="w-6" />
+              <img src="./svg/call.svg" class="w-6" />
               <p class="tracking-wide text-base">1234567890</p>
             </div>
 
             <div class="flex items-center gap-2 text-sm">
-              <img src="../svg/email.svg" class="w-6" />
+              <img src="./svg/email.svg" class="w-6" />
               <p class="tracking-wide text-base">1234567890@gmail.com</p>
             </div>
           </div>
@@ -130,7 +136,7 @@
           <p class="text-[#fda900] text-sm mb-4 tracking-wide">FOLLOW US</p>
 
           <a href="https://www.facebook.com/PDM2010Official" target="_blank">
-            <img src="../svg/facebook.svg" class="w-8" />
+            <img src="./svg/facebook.svg" class="w-8" />
           </a>
         </div>
       </div>
@@ -142,6 +148,27 @@
         </p>
       </div>
     </footer>
+    <aside
+      class="asidebar min-h-dvh w-75 fixed top-0 right-0 z-9999 bg-[#180F05] text-white translate-x-full transition-transform duration-300 ease-in-out"
+    >
+      <div>
+        <div class="flex flex-col p-5">
+          <div class="flex items-center justify-evenly mt-10">
+            <img src="../Pictures/pdm.png" class="w-20" />
+            <p class="w-[50%]">
+              PAMBAYANG DALUBHASAAN<span class="text-[#fda900]">
+                NG MARILAO</span
+              >
+            </p>
+          </div>
+          <div class="h-0.5 w-[90%] mx-auto bg-[#fda900]/20 my-5"></div>
+          <a href="login.html" class="text-[#fda900] text-lg">Login</a>
+        </div>
+        <button type="button" class="closebtn">
+          <img src="./svg/x-mark.svg" class="w-10 absolute top-0 right-0 m-3" />
+        </button>
+      </div>
+    </aside>
     <script src="../src/script.js"></script>
   </body>
 </html>
